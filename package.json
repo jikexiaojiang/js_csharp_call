@@ -1,0 +1,42 @@
+{
+  "name": "js_csharp_call",
+  "version": "1.0.0",
+  "description": "a js program used to show how to interact with csharp",
+  "main": "index.js",
+  "scripts": {
+    "compile_cef_dev": "webpack --config  webpack.web.dev.config.js",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "typescript": "^4.2.2",
+    "jest": "^26.6.3",
+    "jest-junit": "^13.1.0",
+    "ts-jest": "^26.5.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.1",
+    "stream-browserify": "^3.0.0",
+    "ts-loader": "^8.0.14",
+    "eslint": "^8.20.0",
+    "eslint-webpack-plugin": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jikexiaojiang/js_csharp_call.git"
+  },
+  "keywords": [
+    "js",
+    "csharp",
+    "call",
+    "back"
+  ],
+  "author": "zack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jikexiaojiang/js_csharp_call/issues"
+  },
+  "homepage": "https://github.com/jikexiaojiang/js_csharp_call#readme"
+}
