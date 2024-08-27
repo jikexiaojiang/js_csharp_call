@@ -1,6 +1,7 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
 
 const entry = require("./src/entry");
 
@@ -83,6 +84,14 @@ module.exports = {
         //     fix: true
         // }),
         new CleanWebpackPlugin(),
+        //用于自动加载模块，避免在代码中到处进行import或require操作
+        //如下Buffer是希望在代码中使用的标识符，而后面的则是模块的名称，
+        new webpack.ProvidePlugin({
+            Buffer: ['buffer', 'Buffer'],
+        }),
+        // new webpack.ProvidePlugin({
+        //     process: 'process/browser',
+        // })
         // new HtmlWebpackPlugin({
         //     template: "./src/index.html",
         //     minify: {

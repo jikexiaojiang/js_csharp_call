@@ -5,10 +5,11 @@ export class BWTestAPI implements ILogicAPI {
     registerCPPFBridge: (cppfBridge: ICPPFBridge) => void;
     getConfig():Promise<any>{
         try{
-            var list = [4,5,6];
+            let data = Buffer.from("hello test");
+            var list = [1,2,3,data.length];
             return Promise.resolve(list);
         }catch(error:any){
-            console.error(error);
+            // console.error(error);
         }
         return null;
     }

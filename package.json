@@ -38,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/jikexiaojiang/js_csharp_call/issues"
   },
-  "homepage": "https://github.com/jikexiaojiang/js_csharp_call#readme"
+  "homepage": "https://github.com/jikexiaojiang/js_csharp_call#readme",
+  "dependencies": {
+    "buffer": "^6.0.3"
+  }
 }

@@ -1,6 +1,5 @@
 import { ICPPFBridge } from "./ICPPFBridge";
 import { ILogicAPI } from "./ILogicAPI";
-
 export class BWFlexAPI implements ILogicAPI {
     getProperty():string{
         return "BWFlexAPI";
@@ -8,12 +7,14 @@ export class BWFlexAPI implements ILogicAPI {
     registerCPPFBridge: (cppfBridge: ICPPFBridge) => void;
     getConfig():Promise<any>{
         try{
-            var list = [1,2,3];
+            let data = Buffer.from("hello world");
+            var list = [1,2,3,data.length];
             return Promise.resolve(list);
         }catch(error:any){
-            console.error(error);
+            console.log('sfsdfsdff');
         }
-        return null;
+        console.log('sfsdfsdff');
+        return Promise.resolve(["error"]);
     }
     setConfig: (config: any) => Promise<any>;
 
