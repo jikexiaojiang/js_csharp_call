@@ -7,7 +7,7 @@ const entry = require("./src/entry");
 
 module.exports = {
     entry,
-    // target:"node",
+    //target:"node",
     output: {
         filename: "js/[name].js",
         path: path.resolve(__dirname, "dist"),

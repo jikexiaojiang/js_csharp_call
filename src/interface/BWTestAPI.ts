@@ -3,7 +3,7 @@ import { ILogicAPI } from "./ILogicAPI";
 
 export class BWTestAPI implements ILogicAPI {
     registerCPPFBridge: (cppfBridge: ICPPFBridge) => void;
-    getConfig():Promise<any>{
+    getConfig(num:number):Promise<any>{
         try{
             let data = Buffer.from("hello test");
             var list = [1,2,3,data.length];
